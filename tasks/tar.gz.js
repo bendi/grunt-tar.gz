@@ -23,7 +23,7 @@ function init(grunt) {
 		var compress = new Targz(),
 			dataFiles = this.data.files,
 			done = this.async(),
-			files = getFiles(dataFiles),
+			files = getFiles(grunt, dataFiles),
 			countDown = _.after(files.length, done);
 
 		files.forEach(function (file) {
@@ -39,15 +39,15 @@ function init(grunt) {
 	});
 }
 
-function getFiles(dataFiles) {
+function getFiles(grunt, dataFiles) {
 	var files = [];
-	for ( var dest in dataFiles) {
+	for (var dest in dataFiles) {
 		if (!dataFiles.hasOwnProperty(dest)) {
 			continue;
 		}
 		var filepath = dataFiles[dest];
 		if (!grunt.file.exists(filepath)) {
-			grunt.log.warn('Source file "' + filepath + '" not found.');
+			grunt.log.warn("Source file '" + filepath + "' not found.");
 			continue;
 		}
 		files.push({
