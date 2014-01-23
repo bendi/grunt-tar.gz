@@ -2,3 +2,4 @@
 .settings/
 .externalToolBuilders/
 node_modules/
+tmp/node_sqlite3.node
