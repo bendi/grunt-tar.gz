@@ -27,6 +27,7 @@ targz: {
 See original file at [maracuya-jukebox](https://github.com/bendi/maracuya-jukebox) project.
 
 ## Release History
+ - 0.0.2 Fixed jshint errors
  - 0.0.1 Initial release
 
 ## License
