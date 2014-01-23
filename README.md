@@ -1,4 +1,36 @@
-Copyright (c) 2014 Marek Bêdkowski
+# grunt-tar.gz
+
+Grunt task around [tar.gz](https://github.com/jsoverson/tar.gz) npm module
+
+
+## Getting Started
+Install this grunt plugin next to your project's Gruntfile with: `npm install --save-dev grunt-tar.gz`
+
+Then add this line to your project's Gruntfile:
+
+```javascript
+grunt.loadNpmTasks('grunt-tar.gz');
+```
+
+## Example Usage
+
+```js
+targz: {
+    standalone_win: {
+        files: {
+            "build/node_modules/mpg123n/build":  "tmp/win/mpg123n-nw.tgz"
+        }
+    }
+}
+```
+
+See original file at [maracuya-jukebox](https://github.com/bendi/maracuya-jukebox) project.
+
+## Release History
+ - 0.0.1 Initial release
+
+## License
+Copyright (c) 2014 Marek Bedkowski
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
