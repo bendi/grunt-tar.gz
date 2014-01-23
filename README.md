@@ -1,4 +1,4 @@
-# grunt-tar.gz
+# grunt-tar.gz [![Build Status](https://secure.travis-ci.org/bendi/grunt-tar.gz.png?branch=master)](http://travis-ci.org/bendi/grunt-tar.gz)
 
 Grunt task around [tar.gz](https://github.com/jsoverson/tar.gz) npm module
 
