@@ -1,7 +1,7 @@
 {
   "name": "grunt-tar.gz",
   "description": "Grunt wrapper around native gzip/ungzip compression utility for node.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/bendi/grunt-tar.gz",
   "author": {
     "name": "Marek Bedkowski",
