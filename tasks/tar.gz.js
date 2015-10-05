@@ -27,7 +27,7 @@ function init(grunt) {
 			countDown = _.after(files.length, done);
 
 		files.forEach(function (file) {
-			compress.extract(file.src, file.target, function (err) {
+			compress.extract(file.src, grunt.config.process(file.target), function (err) {
 				if (err) {
 					grunt.util.warn(err);
 					done(err);
