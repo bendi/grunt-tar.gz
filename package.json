@@ -29,7 +29,7 @@
     "test": "grunt test"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "dependencies": {
     "tar.gz": "~0.1.1",
